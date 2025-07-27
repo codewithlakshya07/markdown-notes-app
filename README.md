@@ -21,18 +21,3 @@ A simple self-hosted notes app to create and view notes written in Markdown usin
 - Parsedown (Markdown parser)
 
 ---
-
-## ⚙️ Setup Instructions
-
-### 1. 🔧 Create Database
-Run the following SQL to create the `notes_app` database and `notes` table:
-
-```sql
-CREATE DATABASE notes_app;
-USE notes_app;
-
-CREATE TABLE notes (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  title VARCHAR(255),
-  content TEXT
-);
